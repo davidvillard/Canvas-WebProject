@@ -8,64 +8,62 @@
     <link rel="stylesheet" href="../CSS/styles.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/97e5617b30.js" crossorigin="anonymous"></script>
     <title>League Of Legends</title>
 </head>
 
 <body>
+
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <div class="menu">
+      <nav>
+        <a href="../html/index.html" style="animation-delay: 0.1s">Home</a>
+        <a href="#" style="animation-delay: 0.2s">About</a>
+        <a href="../html/form.html" style="animation-delay: 0.3s">Log In</a>
+        <a href="../html/form2.html" style="animation-delay: 0.5s">Log Out</a>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      const toggleMenu = () => {
+        document.body.classList.toggle("open");
+      };
+    </script>
+
+
     <div class="container">
-        <header>
-            <div class="nav_container">
-
-                <div class="nav_menu_izq">
-                    <a href="index.html">
-                        <h1>Web de Juegos</h1>
-                    </a>
-                </div>
-                <div class="nav_menu">
-                    <a href="../html/index.html" class="nav_item">Home</a>
-                    <a href="" class="nav_item">About Us</a>
-                </div>
-            </div>
-        </header>
-
-
         <div class="container-games">
             <div class="gallery">
                 <div class="gallery-row">
-                    <div class="gallery-item"><a href="circunferencia.html"><img src="../media/circunferencia.JPG" class="gallery-image"
-                            alt="circunferencia"></a></div>
+                    <div class="gallery-item"><a href="circunferencia.html"><img src="../media/circunferencia.JPG"
+                                class="gallery-image" alt="circunferencia"></a></div>
                     <div class="gallery-item"><a href="butan.html"><img src="../media/butan.JPG" class="gallery-image"
-                            alt="butan"></a></div>
+                                alt="butan"></a></div>
                 </div>
                 <div class="gallery-row">
-                    <div class="gallery-item"><a href="matabichos.html"><img src="../media/matabichos.JPG" class="gallery-image"
-                            alt="matabichos"></a></div>
-                    <div class="gallery-item"><a href="monigote.html"><img src="../media/monigote.JPG" class="gallery-image"
-                            alt="monigote"></a></div>
+                    <div class="gallery-item"><a href="matabichos.html"><img src="../media/matabichos.JPG"
+                                class="gallery-image" alt="matabichos"></a></div>
+                    <div class="gallery-item"><a href="monigote.html"><img src="../media/monigote.JPG"
+                                class="gallery-image" alt="monigote"></a></div>
                 </div>
                 <div class="gallery-row">
                     <div class="gallery-item"><a href="faro.html"><img src="../media/faro.JPG" class="gallery-image"
-                            alt="faro"></a></div>
+                                alt="faro"></a></div>
                     <div class="gallery-item"><a href="tanque.html"><img src="../media/tanque.JPG" class="gallery-image"
-                            alt="tanque"></a></div>
+                                alt="tanque"></a></div>
                 </div>
                 <div class="gallery-row">
-                    <div class="gallery-item"><a href="semaforo.html"><img src="../media/semaforo.JPG" class="gallery-image"
-                            alt="semaforo"></a></div>
+                    <div class="gallery-item"><a href="semaforo.html"><img src="../media/semaforo.JPG"
+                                class="gallery-image" alt="semaforo"></a></div>
                     <div class="gallery-item"><a href="bolas.html"><img src="../media/bolas.JPG" class="gallery-image"
-                            alt="bolas"></a></div>
+                                alt="bolas"></a></div>
                 </div>
                 <div class="gallery-row">
-                    <div class="gallery-item"><a href="cuadrado.html"><img src="../media/cuadrados.JPG" class="gallery-image"
-                            alt="semaforo"></a></div>
+                    <div class="gallery-item"><a href="cuadrado.html"><img src="../media/cuadrados.JPG"
+                                class="gallery-image" alt="semaforo"></a></div>
                     <div class="gallery-item"><a href="bolas.html"><img src="../media/bolas.JPG" class="gallery-image"
-                            alt="bolas"></a></div>
+                                alt="bolas"></a></div>
                 </div>
             </div>
-        </div>
-
-        <div class="return">
-            <i class="fa-solid fa-rotate-left" style="color:red"></i>
         </div>
     </div>
 

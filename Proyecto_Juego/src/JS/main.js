@@ -1,0 +1,1 @@
+const toggleSideBar = () => document.body.classList.toggle("open");
