@@ -164,8 +164,79 @@ body.open .menu a {
   }
 }
 
+  /*Inicio*/  
 
-/*Imagenes*/
+.container-inicio{
+  background-color: rgb(4, 39, 85);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Para centrar horizontalmente */
+  align-items: center;
+  /* Para centrar verticalmente */
+  
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-11 {
+  border: none;
+  background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+/*Imagenes e contenido de los html*/
 
 .container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/background_home.jpg");
@@ -178,8 +249,6 @@ body.open .menu a {
   /* Para centrar horizontalmente */
   align-items: center;
   /* Para centrar verticalmente */
-  
-
 }
 
 .container-about-us {
@@ -190,8 +259,6 @@ body.open .menu a {
   /* Para centrar horizontalmente */
   align-items: center;
   /* Para centrar verticalmente */
-  
-
 }
 
 .container-games {
@@ -205,9 +272,14 @@ body.open .menu a {
   /* Para centrar verticalmente */
   margin-top: 5em;
   margin-bottom: 5em;
-  padding: 100px;
-  width: 70%;
-  min-width: 90%;
+  width: 50%;
+  min-width: 50%;
+}
+
+@media (max-width: 800px) {
+  .container-games {
+    min-width: 100%;
+  }
 }
 
 .container-games-about-us {
@@ -225,11 +297,12 @@ body.open .menu a {
   padding: 100px;
   width: 70%;
   min-width: 100%;
+  border: 1px solid white;
 }
 
 .container-games-about-us h1 {
   letter-spacing: .1em;
-  font-size: 3em;
+  font-size: 2.8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,10 +314,17 @@ body.open .menu a {
   justify-content: center;
   align-items: center;
   width: 50%;
+  border: 1px solid white;
 }
 
 .container-text p{
   font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  .container-text {
+    width:100%;
+  }
 }
 
 .gallery {
