@@ -33,7 +33,7 @@ button {
   .navbar-burger,
   .menu,
   .background {
-    position: fixed;
+    position: absolute;
   }
   
   .background {
