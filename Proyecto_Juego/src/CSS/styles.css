@@ -32,6 +32,8 @@ button {
   padding: 0;
   background: transparent;
   cursor: pointer;
+
+
 }
 
 .navbar,
@@ -151,6 +153,7 @@ body.open .menu a {
   }
 }
 
+
 /*Inicio*/
 
 .container-inicio {
@@ -158,9 +161,7 @@ body.open .menu a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* Para centrar horizontalmente */
   align-items: center;
-  /* Para centrar verticalmente */
   height: 100vh;
 }
 
@@ -168,11 +169,8 @@ body.open .menu a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* Cambiar a "column" para apilar verticalmente */
   justify-content: center;
-  /* Para centrar horizontalmente */
   align-items: center;
-  /* Para centrar verticalmente */
   margin-top: 5em;
   margin-bottom: 5em;
   width: 50%;
@@ -192,13 +190,16 @@ body.open .menu a {
   height: auto;
 }
 
-.container-logo-inicio p {
-  font-family: 'game';
-  font-size: 7vh; /* Ajusta el tamaño del texto según tus necesidades */
- 
+.container-button-inicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
+.container-logo-inicio h1{
+  font-family: 'game';
+  font-size: 7vh;
+}
 
 .custom-btn {
   width: 100%;

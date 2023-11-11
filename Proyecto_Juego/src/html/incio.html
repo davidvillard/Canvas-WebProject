@@ -8,35 +8,41 @@
     <link rel="stylesheet" href="../CSS/styles.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/97e5617b30.js" crossorigin="anonymous"></script>
     <title>League Of Legends</title>
 </head>
 
-<body>
+<body >
 
-    <div class="container-inicio">
+    <div class="container-inicio" id="container">
         <div class="container-inicio-logo-button">
             <div class="container-logo-inicio">
                 <img src="../media/actua_como_un_diseador_grafico_y_creame_un_logo-removebg-preview.png"
                     alt="logo-LOL-Games">
-                <p>LOL Games</p>
+                    <h1 class="animate__animated animate__fadeInDown">LOL GAMES</h1>
             </div>
             <div class="container-button-inicio">
-                <button class="custom-btn btn-11" onclick="toggleMenuAndRedirect()">JUGAR<div class="dot"></div></button>
-                <script type="text/javascript">
-                    const toggleMenuAndRedirect = () => {
-                      // Agrega o elimina la clase 'open' en el cuerpo (body)
-                      document.body.classList.toggle("open");
-                      // Redirige a la página index.html después de un pequeño retraso
-                      setTimeout(() => {
-                        window.location.href = "../html/index.html";
-                      }, 500); // Ajusta el tiempo según tu animación
-                    };
-                  </script>
+                <button class="custom-btn btn-11 animate__animated animate__fadeIn" onclick="animateAndRedirect()">JUGAR</button>
             </div>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        function animateAndRedirect() {
+            // Animación de salida
+            anime({
+                targets: '#container',
+                opacity: 0,
+                duration: 1000,
+                easing: 'easeOutExpo',
+                complete: function () {
+                    // Redirigir a la página index.html
+                    window.location.href = "index.html";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
