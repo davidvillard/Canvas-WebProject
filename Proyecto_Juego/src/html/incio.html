@@ -16,14 +16,27 @@
 
     <div class="container-inicio">
         <div class="container-inicio-logo-button">
-            <div class="contianer-logo-inicio">
-
+            <div class="container-logo-inicio">
+                <img src="../media/actua_como_un_diseador_grafico_y_creame_un_logo-removebg-preview.png"
+                    alt="logo-LOL-Games">
+                <p>LOL Games</p>
             </div>
             <div class="container-button-inicio">
-                <button class="custom-btn btn-11">Read More<div class="dot"></div></button>
+                <button class="custom-btn btn-11" onclick="toggleMenuAndRedirect()">JUGAR<div class="dot"></div></button>
+                <script type="text/javascript">
+                    const toggleMenuAndRedirect = () => {
+                      // Agrega o elimina la clase 'open' en el cuerpo (body)
+                      document.body.classList.toggle("open");
+                      // Redirige a la página index.html después de un pequeño retraso
+                      setTimeout(() => {
+                        window.location.href = "../html/index.html";
+                      }, 500); // Ajusta el tiempo según tu animación
+                    };
+                  </script>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
