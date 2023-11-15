@@ -59,7 +59,7 @@ function dibujaBicho(x, y) {
 function dibujapuntos(){
     ctx.font = "bold 20px serif";
     ctx.fillStyle = 'red';
-    ctx.fillText("Puntuación: " + puntos , 10, 20);
+    ctx.fillText("Puntuación: " + puntos , 20, 40);
 }
 
 
