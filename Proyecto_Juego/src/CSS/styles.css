@@ -212,7 +212,7 @@ body.open .menu a {
   float: left;
 }
 
-.row {
+.row2 {
   width: 128px;
   height: 152px;
   margin: 0 auto;
@@ -564,10 +564,6 @@ body.open .menu a {
 
 /*FOOTER*/
 
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
 
 .footer {
   background-color: rgb(15, 15, 15);
