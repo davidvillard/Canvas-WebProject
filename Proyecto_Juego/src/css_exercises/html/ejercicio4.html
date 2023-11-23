@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Página</title>
+</head>
+<body>
+  <style>
+    body {
+    background-color: #E1E5EF;
+    font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  }
+  
+  .capa-superior {
+    background-color: #E1E5EF;
+    margin: 35px;
+    font-weight: bold;
+  }
+  
+  .capa-superior ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .capa-superior li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .capa-superior a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+  }
+  
+  .capa-superior li:nth-child(odd) {
+    background-color: white;
+    padding: 5px;
+  }
+  
+  .capa-inferior {
+    background-color: white;
+    margin: 20px;
+  }
+  
+  .capa-inferior .primer-parrafo {
+    font-size: larger;
+    font-style: italic;
+  }
+  
+  .capa-inferior p::first-letter {
+    font-size: larger;
+    font-weight: bold;
+    color: #f32c2c; /* Color diferente al resto del texto */
+  }
+  
+  </style>
+  <div class="capa-superior">
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Menu 4</a></li>
+    </ul>
+  </div>
+
+  <div class="capa-inferior">
+    <p class="primer-parrafo">Este es el primer párrafo y lo voy a formatear distinto del resto.</p>
+    <p class="segundo-parrafo">La primero letra de cada parrafo la voy a hacer más grande, con un color y fuentes distintas</p>
+    <p class="tercer-parrafo">Lorem ipsum dolor sit amet consectetur adipiscing elit ornare orci, enim est tempor gravida suscipit vivamus lobortis duis, imperdiet cum iaculis vel pretium ut neque curae. Vehicula eros mi
+        ultrices condimentum velit montes dictum curae, laoreet porta pellentesque duis pretium venenatis erat. Enim sed pharetra interdum aptent nulla condimentum himenaeos, per tincidunt suscipit posuere
+        viverra platea eros sagittis, montes at nibh placerat cras aliquam.At in nunc metus rhoncus pharetra odio, eros ad posuere potenti donec eu turpis, id nascetur fames habitant conubia. Bibendum per quis
+        class tincidunt ultrices in torquent ligula donec, conubia rhoncus maecenas dapibus proin tortor dictum mollis ultricies, eleifend laoreet ante rutrum pulvinar porttitor inceptos egestas. Risus fringilla dictumst
+        montes odio hendrerit litora lobortis ultricies varius integer, est venenatis sollicitudin accumsan nibh dui habitant condimentum torquent.</p>
+  </div>
+</body>
+</html>

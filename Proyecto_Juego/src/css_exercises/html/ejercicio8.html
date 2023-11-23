@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos Aleatorios con CSS Avanzado</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; /* Para que el fondo no se desplace con el contenido */
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .content {
+      color: white;
+      z-index: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <img id="background" class="background" src="" alt="Fondo Aleatorio">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Efecto de Fondo Aleatorio</h1>
+    <p>Contenido de tu página.</p>
+  </div>
+
+  <script>
+    
+    // Lista de imágenes de fondo aleatorias
+    const backgrounds = [
+      'imagen1.jpg',
+      'imagen2.jpg',
+      'imagen3.jpg',
+      // Agrega más imágenes según sea necesario
+    ];
+
+    // Selecciona una imagen aleatoria al cargar la página
+    document.addEventListener('DOMContentLoaded', function () {
+      const randomIndex = Math.floor(Math.random() * backgrounds.length);
+      const randomBackground = backgrounds[randomIndex];
+      const backgroundElement = document.getElementById('background');
+      backgroundElement.src = "../../media/img/" + randomBackground;
+      backgroundElement.onload = function () {
+        // Hace que la imagen de fondo sea visible después de cargarse
+        backgroundElement.style.opacity = 1;
+      };
+    });
+  </script>
+</body>
+</html>
+

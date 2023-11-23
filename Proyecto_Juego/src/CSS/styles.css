@@ -37,7 +37,7 @@ button {
 .navbar,
 .navbar-burger,
 .menu {
-  position: absolute;
+  position: fixed;
 }
 
 .navbar {
@@ -559,6 +559,15 @@ body.open .menu a {
 .gallery-image:hover {
   transform: scale(1.10);
 }
+
+.separator {
+  width: 50vw; /* Ancho del div */
+  height: 0; /* Altura inicial cero */
+  border: 5px solid white; /* Borde inferior como línea separadora */
+  border-radius: 10px;
+margin-top: 6vh;
+}
+
 
 
 /*FOOTER*/

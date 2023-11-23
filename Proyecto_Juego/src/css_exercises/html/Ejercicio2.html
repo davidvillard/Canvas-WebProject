@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 Manuel</title>
+  <style>
+    /* Estilo común para todas las capas */
+    .capa {
+      width: 400px; /* Altura de las capas */
+      background-color: #ffcc00; /* Color de fondo */
+      border: 5px solid #000; /* Borde negro de 5px */
+      margin-top: 30px; /* Separación entre capas */
+      display: flex;
+      position: absolute;
+      z-index: 1;/* Posicionamiento relativo para la superposición */
+    }
+
+    /* Estilo específico para el texto dentro de cada capa */
+    .capa p {
+      margin: 20px; /* Margen interno del texto */
+    }
+
+    /* Estilos específicos para cada capa */
+    #capa1 {
+      background-color: yellow;
+      
+       /* Otro color de fondo */
+    }
+
+    #capa2 {
+      background-color: red;
+      margin-top: 110px;
+      margin-left: 80px;
+      z-index: 2; /* Otro color de fondo */
+    }
+
+    #capa3 {
+      background-color: blue;
+      margin-top: 190px;
+      margin-left: 160px;
+      z-index: 3; /* Otro color de fondo */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="capa1" class="capa">
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ornare orci, enim est tempor gravida suscipit vivamus lobortis duis, imperdiet cum iaculis vel pretium ut neque curae. Vehicula eros mi
+        ultrices condimentum velit montes dictum curae, laoreet porta pellentesque duis pretium venenatis erat. Enim sed pharetra interdum aptent nulla condimentum himenaeos, per tincidunt suscipit posuere
+        viverra platea eros sagittis, montes at nibh placerat cras aliquam.At in nunc metus rhoncus pharetra odio, eros ad posuere potenti donec eu turpis, id nascetur fames habitant conubia. Bibendum per quis
+        class tincidunt ultrices in torquent ligula donec, conubia rhoncus maecenas dapibus proin tortor dictum mollis ultricies, eleifend laoreet ante rutrum pulvinar porttitor inceptos egestas. Risus fringilla dictumst
+        montes odio hendrerit litora lobortis ultricies varius integer, est venenatis sollicitudin accumsan nibh dui habitant condimentum torquent.</p>
+  </div>
+
+  <div id="capa2" class="capa">
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ornare orci, enim est tempor gravida suscipit vivamus lobortis duis, imperdiet cum iaculis vel pretium ut neque curae. Vehicula eros mi
+        ultrices condimentum velit montes dictum curae, laoreet porta pellentesque duis pretium venenatis erat. Enim sed pharetra interdum aptent nulla condimentum himenaeos, per tincidunt suscipit posuere
+        viverra platea eros sagittis, montes at nibh placerat cras aliquam.At in nunc metus rhoncus pharetra odio, eros ad posuere potenti donec eu turpis, id nascetur fames habitant conubia. Bibendum per quis
+        class tincidunt ultrices in torquent ligula donec, conubia rhoncus maecenas dapibus proin tortor dictum mollis ultricies, eleifend laoreet ante rutrum pulvinar porttitor inceptos egestas. Risus fringilla dictumst
+        montes odio hendrerit litora lobortis ultricies varius integer, est venenatis sollicitudin accumsan nibh dui habitant condimentum torquent.</p>
+  </div>
+
+  <div id="capa3" class="capa">
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ornare orci, enim est tempor gravida suscipit vivamus lobortis duis, imperdiet cum iaculis vel pretium ut neque curae. Vehicula eros mi
+        ultrices condimentum velit montes dictum curae, laoreet porta pellentesque duis pretium venenatis erat. Enim sed pharetra interdum aptent nulla condimentum himenaeos, per tincidunt suscipit posuere
+        viverra platea eros sagittis, montes at nibh placerat cras aliquam.At in nunc metus rhoncus pharetra odio, eros ad posuere potenti donec eu turpis, id nascetur fames habitant conubia. Bibendum per quis
+        class tincidunt ultrices in torquent ligula donec, conubia rhoncus maecenas dapibus proin tortor dictum mollis ultricies, eleifend laoreet ante rutrum pulvinar porttitor inceptos egestas. Risus fringilla dictumst
+        montes odio hendrerit litora lobortis ultricies varius integer, est venenatis sollicitudin accumsan nibh dui habitant condimentum torquent.</p>
+  </div>
+
+</body>
+</html>
