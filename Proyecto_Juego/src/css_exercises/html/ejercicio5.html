@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño con Flexbox y Grid</title>
+  <style>
+    /* Reset de estilos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Estilos del contenedor principal */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Cambio en la cantidad de columnas */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Estilos de la barra lateral */
+    .sidebar {
+      background-color: #f4f4f4;
+      padding: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Estilos del contenido principal */
+    .main-content {
+      background-color: #fff;
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .content-box {
+      flex: 1 0 calc(50% - 10px); /* Ajuste del tamaño del div */
+      background-color: #f0f0f0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .content-box:nth-child(1){
+        background-color: red;
+    }
+
+    .content-box:nth-child(2){
+        background-color: blue;
+    }
+
+    .content-box:nth-child(3){
+        background-color: green;
+    }
+
+    .content-box:nth-child(4){
+        background-color: pink;
+    }
+
+    .content-box:nth-child(5){
+        background-color: yellow;
+        flex: 2 0 calc(66.66% - 10px); /* Cambio en el tamaño del div 5 */
+    }
+
+    /* Media query para hacer el diseño responsive */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .content-box {
+        flex: 1 0 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">Enlace 1</a></li>
+          <li><a href="#">Enlace 2</a></li>
+          <li><a href="#">Enlace 3</a></li>
+          <li><a href="#">Enlace 4</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="content-box">Div 1</div>
+      <div class="content-box">Div 2</div>
+      <div class="content-box">Div 3</div>
+      <div class="content-box">Div 4</div>
+      <div class="content-box">Div 5</div>
+    </main>
+  </div>
+</body>
+</html>
