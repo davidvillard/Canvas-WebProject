@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fondos Aleatorios con CSS Avanzado</title>
+  <title>Fondos Aleatorios con CSS</title>
   <style>
     body {
       margin: 0;
@@ -44,9 +44,9 @@
     
     // Lista de imágenes de fondo aleatorias
     const backgrounds = [
-      'imagen1.jpg',
-      'imagen2.jpg',
-      'imagen3.jpg',
+      '../../media/imagen1.jpg',
+      '../../media/imagen2.jpg',
+      '../../media/imagen3.jpg',
       // Agrega más imágenes según sea necesario
     ];
 
@@ -55,7 +55,7 @@
       const randomIndex = Math.floor(Math.random() * backgrounds.length);
       const randomBackground = backgrounds[randomIndex];
       const backgroundElement = document.getElementById('background');
-      backgroundElement.src = "../../media/img/" + randomBackground;
+      backgroundElement.src = "../../media" + randomBackground;
       backgroundElement.onload = function () {
         // Hace que la imagen de fondo sea visible después de cargarse
         backgroundElement.style.opacity = 1;
