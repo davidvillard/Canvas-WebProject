@@ -9,7 +9,7 @@ var temporizadorInterval;
 window.onload = function () {
 
     canvas = document.getElementById('canvas1');
-    bicho.src = '../media/werlyb.jpg';
+    bicho.src = '../media/sonic.jpg';
     if (canvas && canvas.getContext) {
         ctx = canvas.getContext('2d');
         if (ctx) {
@@ -52,6 +52,12 @@ function getRandomNumber(min, max) {
 
 
 function dibujaBicho(x, y) {
+    if (x + bicho.width > ancho) {
+        x = ancho - bicho.width;
+    }
+    if (y + bicho.height > alto) {
+        y = alto - bicho.height;
+    }
     ctx.drawImage(bicho, x, y);
 }
 

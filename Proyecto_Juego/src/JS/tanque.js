@@ -16,7 +16,7 @@ const Bicho = {
 
 window.onload = () => {
   canvas = document.getElementById("canvas1")
-  Bicho.img.src = '../media/werlyb.jpg'
+  Bicho.img.src = '../media/sonic.jpg'
   if (canvas && canvas.getContext) {
     ctx = canvas.getContext("2d")
     animate()

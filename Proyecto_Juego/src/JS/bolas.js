@@ -9,16 +9,16 @@ var bolax1 = 300;
 var bolay1 = 0;
 var ancho, alto;
 var limiteder, limiteizq, limiteup, limitedown;
-var dx = 6;
-var dy = 6;
-var dx1 = 3;
+var dx = 9;
+var dy = 5;
+var dx1 = 8;
 var dy1 = 4;
 let puntoDeColision = radio;
 window.onload = function () {
 
     canvas = document.getElementById('canvas1');
-    bola.src = '../media/bola.png';
-    bola1.src = '../media/bola.png';
+    bola.src = '../media/sonic-logo.png';
+    bola1.src = '../media/sonic-logo.png';
     if (canvas && canvas.getContext) {
         ctx = canvas.getContext('2d');
         if (ctx) {

@@ -3,7 +3,7 @@ var canvas;
 var angulo = 0
 var speed = 4;
 const imagenBola = new Image();
-imagenBola.src = '../media/LOL_logo.png';
+imagenBola.src = '../media/knuckles_head_logo_by_officialsassy_ddu4sg2-fullview.png';
 window.onload = function () {
      canvas = document.getElementById("canvas1");
     if (canvas && canvas.getContext) {

@@ -14,7 +14,7 @@ var puntos = 0;
 window.onload = function () {
 
     canvas = document.getElementById('canvas1');
-    bola.src = '../media/bola.png';
+    bola.src = '../media/sonic-logo.png';
     if (canvas && canvas.getContext) {
         ctx = canvas.getContext('2d');
         if (ctx) {
