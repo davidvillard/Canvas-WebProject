@@ -5,9 +5,17 @@
   padding: 0;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
 @font-face {
   font-family: 'game';
   src: url(../fonts/Games-Italic.ttf);
+}
+
+
+@font-face {
+  font-family: 'sonic';
+  src: url(../fonts/SONIC.TTF);
 }
 
 body {
@@ -18,7 +26,6 @@ body {
 
 p,
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -478,7 +485,45 @@ body.open .menu a {
   min-width: 50%;
 }
 
+.waviy {
+  margin-top: 5%;
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 4em;
+}
+.waviy span {
+  font-family: 'game';
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 2s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
 @media (max-width: 800px) {
+  .waviy {
+    max-width: 80%;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .container-games {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
   .container-games {
     min-width: 100%;
   }
@@ -706,7 +751,7 @@ hr {
   background: #FFFFFF;
   width: 30%;
   margin: 0 auto 100px;
-  padding: 125px;
+  padding: 100px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 5%;
@@ -728,7 +773,7 @@ hr {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background-color: rgba(1, 116, 187, 0.884);
   width: 100%;
   border: 0;
   padding: 15px;
@@ -742,7 +787,7 @@ hr {
 .form button:hover,
 .form button:active,
 .form button:focus {
-  background: #43A047;
+  background-color: rgba(1, 116, 187, 0.884);
 }
 
 .form .message {
@@ -752,6 +797,12 @@ hr {
 }
 
 .form .message a {
-  color: #4CAF50;
+  color: rgba(1, 116, 187, 0.884);
   text-decoration: none;
+}
+
+.logo-sonic{
+  color: black;
+  font-family: 'sonic';
+  font-size: 4em;
 }
