@@ -39,8 +39,8 @@ function animar() {
 function Luis() {
     // Cabeza
     ctx.lineWidth = 3;
-    ctx.strokeStyle = 'white';
-    ctx.fillStyle = 'white';
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'black';
     ctx.beginPath();
     ctx.arc(100, 50, 30, 0, 2 * Math.PI);
     ctx.stroke();
@@ -72,7 +72,7 @@ function Luis() {
 
     // Cuerpo
     ctx.lineWidth = 9;
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = "black";
     ctx.beginPath();
     ctx.moveTo(100, 75);
     ctx.lineTo(100, 200);
@@ -80,13 +80,13 @@ function Luis() {
 
     //brazos
     ctx.lineWidth = 9;
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = "black";
     ctx.beginPath();
     ctx.moveTo(100, 90);
     ctx.lineTo(150, brazos);
     ctx.stroke();
     ctx.lineWidth = 9;
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = "black";
     ctx.beginPath();
     ctx.moveTo(100, 90);
     ctx.lineTo(50, brazos);
@@ -94,13 +94,13 @@ function Luis() {
 
     //Piernas
     ctx.lineWidth = 9;
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = "black";
     ctx.beginPath();
     ctx.moveTo(100, 195);
     ctx.lineTo(130, 270);
     ctx.stroke();
     ctx.lineWidth = 9;
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = "black";
     ctx.beginPath();
     ctx.moveTo(100, 195);
     ctx.lineTo(70, 270);

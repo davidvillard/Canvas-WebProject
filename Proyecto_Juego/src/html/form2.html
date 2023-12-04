@@ -30,16 +30,14 @@
     </script>
 
 <div class="container">
-
-
         <div class="login-page">
             <div class="form">
                 <p class="logo-sonic">k</p> 
-                <form class="register-form">
-                    <input type="text" placeholder="name" />
-                    <input type="password" placeholder="password" />
-                    <input type="text" placeholder="email address" />
-                    <button>create</button>
+                <form class="register-form" onsubmit="validateRegistration(event)">
+                    <input type="text" id="name" placeholder="Name" required />
+                    <input type="password" id="password" placeholder="Password" required />
+                    <input type="email" id="email" placeholder="Email Address" required />
+                    <button type="submit">Register</button>
                     <p class="message">Already registered? <a href="./form.html">Sign In</a></p>
                 </form>
             </div>
